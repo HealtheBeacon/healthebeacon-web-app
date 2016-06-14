@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
    root 'splash#view'
    get 'teams' => 'teams#view'
+   get 'myteam' => 'my_team#view'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
