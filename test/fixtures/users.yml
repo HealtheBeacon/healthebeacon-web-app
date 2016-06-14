@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  cernerid: 
+  first_name: 
+  last_name: 
+  teamid: 
+  score: 1
+
+two:
+  cernerid: 
+  first_name: 
+  last_name: 
+  teamid: 
+  score: 1

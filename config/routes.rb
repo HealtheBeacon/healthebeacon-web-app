@@ -7,7 +7,7 @@ Rails.application.routes.draw do
    get 'teams' => 'teams#view'
    get '/about', to: 'static#about', as: 'about'
    get '/myteam', to: 'my_team#view', as: 'view'
-
+   get '/users', to: 'users#show', as: 'show'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
