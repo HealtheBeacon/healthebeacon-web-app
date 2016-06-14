@@ -4,5 +4,6 @@ class TeamsController < ActionController::Base
   protect_from_forgery with: :exception
 
   def view
+    render :layout => 'application'
   end
 end
