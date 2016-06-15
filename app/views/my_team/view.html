@@ -1,41 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>HealtheBeacon</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class="text-center">MY TEAM RANKINGS</h1>
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th>Rank</th>
-            <th>Team Name</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Score</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% i = 1 %>
-          <% @users.each do |u| %>
-            <tr>
-              <td><%= i %></td>
-              <td><%= u.cernerid %></td>
-              <td><%= u.first_name %></td>
-              <td><%= u.last_name %></td>
-              <td><%= u.score %></td>
-            </tr>
-            <% i = i + 1 %>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
-  </body>
-</html>
+<div class="container">
+  <h1 class="text-center">MY TEAM RANKINGS</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Rank</th>
+        <th>Team Name</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Score</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% i = 1 %>
+      <% @users.each do |u| %>
+        <tr>
+          <td><%= i %></td>
+          <td><%= u.cernerid %></td>
+          <td><%= u.first_name %></td>
+          <td><%= u.last_name %></td>
+          <td><%= u.score %></td>
+        </tr>
+        <% i = i + 1 %>
+      <% end %>
+    </tbody>
+  </table>
+</div>
