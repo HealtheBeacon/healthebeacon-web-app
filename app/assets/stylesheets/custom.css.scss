@@ -4,6 +4,7 @@
 body {
   padding-top: 40px;
   background-color: #0093cf;
+  overflow: hidden;
   color: white;
 }
 
@@ -11,20 +12,23 @@ body {
   //background-color: #e7e7e7;
   background-color: white;
   border-bottom: 2px, white;
+
+  .navbar-brand{
+    color: #0093cf;
+    font-weight: 500;
+  }
+
+  .navbar-nav>li>a {
+    color: #0093cf;
+    font-weight: 500;
+  }
 }
 
-.navbar-default .navbar-brand{
-  color: #0093cf;
-  font-weight: 500;
-}
-
-.navbar-default .navbar-nav>li>a {
-  color: #0093cf;
-  font-weight: 500;
+.navbar-fixed-top {
+  height: 100%;
+  width: 44px;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #32a8d8;
-  //background-color: #0093cf;
-  border-bottom: 2px, white;
 }
