@@ -24,12 +24,12 @@
     </thead>
     <tbody>
       <% i = 1 %>
-        <% @team_presenter.teams.each do |t| %>
+        <% @team_presenter.sorted_team_hash.each do |name, score| %>
         <tr>
           <td><%= i %></td>
-          <td><%= i %></td>
-          <td><%= t%></td>
-          <td>Figure this out
+          <td><%= name %></td>
+          <td><%= score%></td>
+          <td>Figure this out</td>
         </tr>
         <% i = i + 1 %>
         <% end %>
