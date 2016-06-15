@@ -4,6 +4,7 @@ class SplashController < ActionController::Base
   protect_from_forgery with: :exception
 
   def view
+    @team_presenter = Teams::TeamsPresenter.new(User.all)
     render :layout => 'application'
   end
 end

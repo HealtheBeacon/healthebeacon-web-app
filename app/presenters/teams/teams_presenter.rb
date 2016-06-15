@@ -28,7 +28,6 @@ module Teams
       team_hash.sort_by { |id, score| score}
     end
 
-
     def team_score(teamid)
       score = 0
       number_users = 0
@@ -38,6 +37,12 @@ module Teams
         number_users = number_users + 1
       end
       score / number_users
+    end
+
+    def leading_team()
+      h = sorted_team_hash
+      team = Hash[*h.first].first.first
+      team
     end
 
   end
