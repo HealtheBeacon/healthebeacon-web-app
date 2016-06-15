@@ -23,14 +23,16 @@
           </tr>
         </thead>
         <tbody>
+          <% i = 1 %>
           <% @users.each do |u| %>
             <tr>
-              <td>1</td>
+              <td><%= i %></td>
               <td><%= u.cernerid %></td>
               <td><%= u.first_name %></td>
               <td><%= u.last_name %></td>
               <td><%= u.score %></td>
             </tr>
+            <% i = i + 1 %>
           <% end %>
         </tbody>
       </table>
