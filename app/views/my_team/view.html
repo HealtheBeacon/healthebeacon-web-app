@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="text-center">MY TEAM RANKINGS</h1>
+  <h1 class="text-center">HEALTHEBEACON | MY TEAM RANKINGS</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -14,11 +14,11 @@
       <% i = 1 %>
       <% @users.each do |u| %>
         <tr>
-          <td><%= i %></td>
-          <td><%= u.cernerid %></td>
-          <td><%= u.first_name %></td>
-          <td><%= u.last_name %></td>
-          <td><%= u.score %></td>
+          <td align="left"><%= i %></td>
+          <td align="left"><%= u.cernerid %></td>
+          <td align="left"><%= u.first_name %></td>
+          <td align="left"><%= u.last_name %></td>
+          <td align="left"><%= u.score %></td>
         </tr>
         <% i = i + 1 %>
       <% end %>

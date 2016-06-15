@@ -2,33 +2,38 @@
 @import "bootstrap";
 
 body {
-  padding-top: 40px;
   background-color: #0093cf;
   overflow: hidden;
   color: white;
 }
 
 .navbar-default {
-  //background-color: #e7e7e7;
   background-color: white;
   border-bottom: 2px, white;
 
-  .navbar-brand{
-    color: #0093cf;
-    font-weight: 500;
-  }
-
   .navbar-nav>li>a {
     color: #0093cf;
-    font-weight: 500;
   }
 }
 
 .navbar-fixed-top {
   height: 100%;
-  width: 44px;
+  width: 45px;
 }
 
 .table-striped > tbody > tr:nth-child(odd) > td, .table-striped > tbody > tr:nth-child(odd) > th {
   background-color: #32a8d8;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+  color: white;
+  background-color: #0093cf;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: #9a9a9a;
+}
+
+.glyphicon {
+  font-size: 15px;
 }

@@ -1,5 +1,5 @@
 <div class="container">
-  <h1 class="text-center">CURRENT TEAM RANKINGS</h1>
+  <h1 class="text-center">HEALTHEBEACON | CURRENT TEAM RANKINGS</h1>
   <table class="table table-striped">
     <thead>
       <tr>
@@ -13,10 +13,10 @@
       <% i = 1 %>
         <% @team_presenter.sorted_team_hash.each do |name, score| %>
         <tr>
-          <td><%= i %></td>
-          <td><%= name %></td>
-          <td><%= score%></td>
-          <td>Figure this out</td>
+          <td align="left"><%= i %></td>
+          <td align="left"><%= name %></td>
+          <td align="left"><%= score%></td>
+          <td align="left">Figure this out</td>
         </tr>
         <% i = i + 1 %>
         <% end %>
