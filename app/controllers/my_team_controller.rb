@@ -4,6 +4,7 @@ class MyTeamController < ActionController::Base
   protect_from_forgery with: :exception
 
   def view
+    @teams = Team.all
     @users = User.order(:score).reverse_order.where(teamid: 1)
     render :layout => 'application'
   end
