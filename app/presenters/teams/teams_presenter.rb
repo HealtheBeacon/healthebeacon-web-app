@@ -44,6 +44,5 @@ module Teams
       team = Hash[*h.first].first.first
       team
     end
-
   end
 end

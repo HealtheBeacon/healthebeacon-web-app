@@ -6,6 +6,7 @@ class CreateUsers < ActiveRecord::Migration
       t.string :last_name
       t.integer :teamid
       t.integer :score
+      t.string :pid
 
       t.timestamps null: false
     end
