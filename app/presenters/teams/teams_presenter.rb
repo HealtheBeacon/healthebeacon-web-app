@@ -25,7 +25,7 @@ module Teams
     end
 
     def sorted_team_hash()
-      team_hash.sort_by { |id, score| score}
+      team_hash.sort_by { |id, score| score}.reverse
     end
 
     def team_score(teamid)
