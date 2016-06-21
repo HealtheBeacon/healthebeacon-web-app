@@ -6,7 +6,11 @@ Rails.application.routes.draw do
    root 'splash#view'
    get 'teams' => 'teams#view'
    get '/about', to: 'static#about', as: 'about'
-
+   get '/myteam', to: 'my_team#view', as: 'view'
+   get '/teams/:id', to: 'teams#show', as: 'team'
+   #get '/users', to: 'users#show', as: 'show'
+   resources :teams
+   resources :users
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

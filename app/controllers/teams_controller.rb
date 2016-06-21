@@ -1,9 +1,13 @@
 class TeamsController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
-  protect_from_forgery with: :exception
-
   def view
+    @team_presenter = Teams::TeamsPresenter.new(User.all)
     render :layout => 'application'
+  end
+
+  def show
+    @teams = Team.all
+    @team = Team.where(id: params[:id])
+    @users = User.order(:score).reverse_order.where(teamid: params[:id])
+    render "my_team/view"
   end
 end

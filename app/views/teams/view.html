@@ -1,66 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>HealtheBeacon</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-</head>
-<body>
-
 <div class="container">
-  <h1 class="text-center">CURRENT TEAM RANKINGS</h1>
+  <h1 class="text-center">HEALTHEBEACON | CURRENT TEAM RANKINGS</h1>
   <table class="table table-striped">
     <thead>
       <tr>
         <th>RANK</th>
         <th>TEAM NAME</th>
-        <th>SCORE</th>
-        <th>DAY'S CHANGE</th>
+        <th>AVERAGE SCORE</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
-        <td>1</td>
-        <td>Healthe Intent | Registries</td>
-        <td>41</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Healthe Intent | Development</td>
-        <td>38</td>
-        <td>-1</td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>Some other Team | Web Application</td>
-        <td>25</td>
-        <td>5</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Healthe Intent | Registries</td>
-        <td>41</td>
-        <td>2</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Healthe Intent | Development</td>
-        <td>38</td>
-        <td>-1</td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Some other Team | Web Application</td>
-        <td>25</td>
-        <td>5</td>
-      </tr>
+      <% i = 1 %>
+        <% @team_presenter.sorted_team_hash.each do |name, score| %>
+        <tr>
+          <td align="left"><%= i %></td>
+          <td align="left"><%= name %></td>
+          <td align="left"><%= score%></td>
+        </tr>
+        <% i = i + 1 %>
+        <% end %>
     </tbody>
   </table>
 </div>
-</body>
-</html>

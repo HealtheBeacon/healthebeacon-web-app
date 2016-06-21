@@ -15,6 +15,7 @@ gem 'coffee-rails', '~> 4.1.0'
  gem 'therubyracer', platforms: :ruby
 #Use Less and Bootstrap for css
 gem 'bootstrap-sass', '~> 3.2.0'
+gem 'pry-rails'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
