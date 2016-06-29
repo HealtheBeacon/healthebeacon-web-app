@@ -7,7 +7,7 @@ Things you may want to cover:
 
 * Ruby version
 
-* Test
+* Test2
 
 * System dependencies
 
