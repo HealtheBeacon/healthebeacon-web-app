@@ -55,9 +55,9 @@
           <% end %>
         </tbody>
       </table>
-      <h5> Click a team to view their leaderboard: </h5>
+      <h5> Click a team to view their leaderboard: </h3>
       <% @teams.each do |t| %>
-        <h5><%=link_to t.team_name, team_path(t)%></a></h5>
+        <h5><a><%=link_to t.team_name, team_path(t)%></a></h5>
       <% end %>
     </div>
   </body>
